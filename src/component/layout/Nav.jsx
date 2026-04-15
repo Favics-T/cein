@@ -1,46 +1,23 @@
-import React from "react";
-import Logo from '../Logo'
-import { LuSearch } from "react-icons/lu";
-import { FaCartArrowDown } from "react-icons/fa";
-import { CiUser } from "react-icons/ci";
+const Nav = () => {
+  return (
+    <header className="flex justify-between items-center py-6 px-8">
+      <h1 className="text-xl font-semibold">CEIN.</h1>
 
-const navlist =[
-    {title:'Shop',link:'a'},
-    {title:'About US', link:'b'},
-    {title:'Journal',link:'c'},
-    {title:'Store', link:'d'}
-]
+      <nav className="hidden md:flex gap-6 text-sm text-gray-500">
+        <a href="#">All Product</a>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
 
-const icons = [
-    {icon:<LuSearch />, link:'a'},
-    {icon:<FaCartArrowDown />, link:'b'},
-    {icon:<CiUser />, link:'c'}
-]
+      <div className="flex gap-4">
+        <span>♡</span>
+        <span>🛒</span>
+        <span>👤</span>
+      </div>
+    </header>
+  );
+};
 
- const Nav=()=>{
-    return(
-        <div className='flex justify-between  md:my-10 '>
-
-            <Logo />
-            <ul className="flex gap-3">
-                {
-                    navlist.map(({title,link})=>(
-                        <li key={link}>{title}</li>
-
-                    ))
-                }
-            </ul>
-             <ul className="flex gap-3">
-                {
-                    icons.map(({icon,link})=>(
-                        <li key={link} className="text-2xl">{icon}</li>
-
-                    ))
-                }
-            </ul>
-
-
-        </div>
-    )
-}
-export default Nav
+export default Nav;
