@@ -1,4 +1,4 @@
-import React fromm 'react'
+import React from 'react'
 
 const FeaturedProduct = ({ product }) => {
   return (

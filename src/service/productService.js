@@ -1,3 +1,7 @@
+import Headphone from '../assets/Headphone.jpg'
+
+console.log(Headphone)
+
 export const fetchProducts = async () => {
   await new Promise((res) => setTimeout(res, 800));
 
@@ -6,7 +10,7 @@ export const fetchProducts = async () => {
       id: 1,
       name: "Headphones x-28m",
       price: 149.99,
-      image: "/images/headphones.png",
+      image: {Headphone},
       featured: true,
       description: "Superb sound, sleek design, noise cancellation."
     },
