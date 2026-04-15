@@ -1,3 +1,5 @@
+import React fromm 'react'
+
 const FeaturedProduct = ({ product }) => {
   return (
     <div className="bg-gray-100 rounded-3xl p-6 flex flex-col justify-between">
