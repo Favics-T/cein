@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from '../component/Logo'
+import Logo from '../Logo'
 import { LuSearch } from "react-icons/lu";
 import { FaCartArrowDown } from "react-icons/fa";
 import { CiUser } from "react-icons/ci";

@@ -1,4 +1,4 @@
-import  Nav  from "./component/Nav"
+import  Nav  from "./component/layout/Nav"
 import Home from "./page/Home"
 import { BrowserRouter as Router, Navigate, Route, Routes,Outlet } from 'react-router-dom';
 

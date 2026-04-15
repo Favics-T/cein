@@ -1,4 +1,4 @@
-import Button from '../component/Button'
+import Button from './ui/Button'
 import { GoArrowUpRight } from "react-icons/go";
 
 const Hero=()=> {
